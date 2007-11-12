@@ -1,0 +1,28 @@
+<PropertyList>
+
+
+    <!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+    -->
+    <!--                   Auteur :      Gerard ROBIN                      GPL COPYRIGHT-->
+	<path>h21c-pilote_copilote.ac</path>
+
+	<texture-path>Textures</texture-path>
+
+        <animation>
+            <type>select</type>
+            <object-name>Pilote</object-name>
+            <condition>
+                <not>
+                    <equals>
+                        <property>sim/current-view/view-number</property>
+                        <value>0</value>
+                    </equals>
+                </not>
+            </condition>
+        </animation>
+
+
+</PropertyList>

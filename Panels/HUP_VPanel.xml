@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+
+<!--
+    Dedicated only to FlightGear
+    Property of Gerard Robin
+    License:  GPL
+-->
+
+
+
+<PropertyList>
+
+    <path>Models/h21-vpanel.ac</path>
+    <texture-path>Models/Textures</texture-path>
+
+<!--==COLON VERT CENTRE =========================-->
+
+    <model>
+            <name>ASI</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0.0967402</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>ASI</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/ASI-S51.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0.0967402</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Tachymetre</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.096167</z-m>
+            </offsets>
+    </model>
+
+<!--==COLON HORIZ CENTRE  DROITE===========================-->
+
+    <model>
+            <name>HI</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.0897098</y-m>
+                    <z-m>-0.044998</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>HI</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/HI-S51.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.0897098</y-m>
+                    <z-m>-0.044998</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Altitude</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.174355</y-m>
+                    <z-m>-0.044998</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Altitude</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/ALT-Nord.xml</path>
+            <offsets>
+                    <x-m>-0.0045323</x-m>
+                    <y-m>0.174355</y-m>
+                    <z-m>-0.044998</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>VSI</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.259001</y-m>
+                    <z-m>-0.044998</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>VSI</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/IVSI-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.259001</y-m>
+                    <z-m>-0.044998</z-m>
+            </offsets>
+    </model>
+
+    <!--==BAS DROITE============================================-->
+
+    <model>
+            <name></name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_tpt-S51.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.0870272</y-m>
+                    <z-m>-0.13637</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Turn</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.174355</y-m>
+                    <z-m>-0.135512</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Turn</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/TURN-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.174355</y-m>
+                    <z-m>-0.135512</z-m>
+            </offsets>
+    </model>
+
+<!--==HAUT DROITE============================================-->
+
+    <model>
+            <name></name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.110977</y-m>
+                    <z-m>0.0852558</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>AI</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.236636</y-m>
+                    <z-m>0.0852558</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>AI</name>
+            <path>Aircraft/H-21C-Shawnee/Instruments/Attitude-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.236636</y-m>
+                    <z-m>0.0852558</z-m>
+            </offsets>
+    </model>
+
+
+
+</PropertyList>

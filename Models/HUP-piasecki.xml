@@ -1,0 +1,361 @@
+<PropertyList include="HUP_base.xml">
+
+
+    <!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+    -->
+    <!--                   Auteur :      Gerard ROBIN                      GPL COPYRIGHT-->
+	<path>piasecki_hup.ac</path>
+
+	<texture-path>Textures</texture-path>
+
+
+        <offsets>
+            <pitch-deg>0</pitch-deg>
+            <z-m>0.08</z-m>
+            <x-m>0</x-m>
+        </offsets>
+
+       <!-- <animation>
+		<type>noshadow</type>
+                <object-name>Fuselage-Doublage</object-name>
+                <object-name>Cockpit</object-name>
+ 	</animation>-->
+
+
+        <!--<model>
+            <name>Fuselage-Doublage</name>
+            <path>Aircraft/HUP-Retriever/Models/HUP-Fuselage-Doublage.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>
+
+        <model>
+            <name>Cockpit</name>
+            <path>Aircraft/HUP-Retriever/Models/HUP-Cockpit.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>-->
+
+        <model>
+            <name>AVRotor-Tete</name>
+            <path>Aircraft/HUP-Retriever/Models/Rotors/HUP-AVRotor-Tete.xml</path>
+            <offsets>
+                    <x-m>-3.74806</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>
+
+        <model>
+            <name>AVRotor-Pale0</name>
+            <path>Aircraft/HUP-Retriever/Models/Rotors/HUP-AVRotor-Pale0.xml</path>
+            <offsets>
+                    <x-m>-3.74806</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>
+
+        <model>
+            <name>AVRotor-Pale1</name>
+            <path>Aircraft/HUP-Retriever/Models/Rotors/HUP-AVRotor-Pale1.xml</path>
+            <offsets>
+                    <x-m>-3.74806</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>
+
+        <model>
+            <name>AVRotor-Pale2</name>
+            <path>Aircraft/HUP-Retriever/Models/Rotors/HUP-AVRotor-Pale2.xml</path>
+            <offsets>
+                    <x-m>-3.74806</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>
+
+        <model>
+            <name>ARRotor-Tete</name>
+            <path>Aircraft/HUP-Retriever/Models/Rotors/HUP-ARRotor-Tete.xml</path>
+            <offsets>
+                    <x-m>2.89148</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>
+
+        <model>
+            <name>ARRotor-Pale0</name>
+            <path>Aircraft/HUP-Retriever/Models/Rotors/HUP-ARRotor-Pale0.xml</path>
+            <offsets>
+                    <x-m>2.89148</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>
+
+        <model>
+            <name>ARRotor-Pale1</name>
+            <path>Aircraft/HUP-Retriever/Models/Rotors/HUP-ARRotor-Pale1.xml</path>
+            <offsets>
+                    <x-m>2.89148</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>
+
+        <model>
+            <name>ARRotor-Pale2</name>
+            <path>Aircraft/HUP-Retriever/Models/Rotors/HUP-ARRotor-Pale2.xml</path>
+            <offsets>
+                    <x-m>2.89148</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+        </model>
+
+    <animation>
+            <type>select</type>
+            <object-name>Pilote</object-name>
+            <condition>
+                <not>
+                    <equals>
+                        <property>sim/current-view/view-number</property>
+                        <value>0</value>
+                    </equals>
+                </not>
+            </condition>
+        </animation>
+
+
+        <!--===========SIEGE COPILOTE et TRAPPE============================-->
+
+        <animation>
+            <type>rotate</type>
+             <object-name>DSiege-Base</object-name>
+             <object-name>DSiege-H</object-name>
+             <object-name>DSiege-Bras</object-name>
+             <object-name>DSiege-V</object-name>
+            <property>surface-positions/trap-position</property>
+            <interpolation>
+                    <entry>
+                    <ind>0.0</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.33</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.66</ind>
+                    <dep>-90</dep>
+                    </entry>
+                    <entry>
+                    <ind>1.0</ind>
+                    <dep>-90</dep>
+                    </entry>
+            </interpolation>
+            <center>
+                <x-m>-3.88295</x-m>
+                <y-m>0</y-m>
+                <z-m>-0.85784</z-m>
+            </center>
+            <axis>
+              <x>0</x>
+              <y>1</y>
+              <z>0</z>
+            </axis>
+        </animation>
+
+        <animation>
+            <type>rotate</type>
+             <object-name>DSiege-Bras</object-name>
+             <object-name>DSiege-V</object-name>
+            <property>surface-positions/trap-position</property>
+            <interpolation>
+                    <entry>
+                    <ind>0.0</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.33</ind>
+                    <dep>30</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.66</ind>
+                    <dep>30</dep>
+                    </entry>
+                    <entry>
+                    <ind>1.0</ind>
+                    <dep>30</dep>
+                    </entry>
+            </interpolation>
+            <center>
+                <x-m>-3.73441</x-m>
+                <y-m>0</y-m>
+                <z-m>-0.60264</z-m>
+            </center>
+            <axis>
+              <x>0</x>
+              <y>1</y>
+              <z>0</z>
+            </axis>
+        </animation>
+
+        <animation>
+            <type>rotate</type>
+             <object-name>DSiege-V</object-name>
+            <property>surface-positions/trap-position</property>
+            <interpolation>
+                    <entry>
+                    <ind>0.0</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.33</ind>
+                    <dep>-30</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.66</ind>
+                    <dep>-130</dep>
+                    </entry>
+                    <entry>
+                    <ind>1.0</ind>
+                    <dep>-130</dep>
+                    </entry>
+            </interpolation>
+            <center>
+                <x-m>-3.34322</x-m>
+                <y-m>0</y-m>
+                <z-m>-0.353252</z-m>
+            </center>
+            <axis>
+              <x>0</x>
+              <y>1</y>
+              <z>0</z>
+            </axis>
+        </animation>
+
+        <animation>
+            <type>rotate</type>
+             <object-name>Manche-Copilote</object-name>
+            <property>surface-positions/trap-position</property>
+            <interpolation>
+                    <entry>
+                    <ind>0.0</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.33</ind>
+                    <dep>-80</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.66</ind>
+                    <dep>-80</dep>
+                    </entry>
+                    <entry>
+                    <ind>1.0</ind>
+                    <dep>-80</dep>
+                    </entry>
+            </interpolation>
+            <center>
+                <x-m>-3.96916</x-m>
+                <y-m>0</y-m>
+                <z-m>-0.87</z-m>
+            </center>
+            <axis>
+              <x>0</x>
+              <y>1</y>
+              <z>0</z>
+            </axis>
+        </animation>
+
+        <animation>
+            <type>rotate</type>
+             <object-name>Trappe</object-name>
+            <property>surface-positions/trap-position</property>
+            <interpolation>
+                    <entry>
+                    <ind>0.0</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.33</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>0.66</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>1.0</ind>
+                    <dep>90</dep>
+                    </entry>
+            </interpolation>
+            <axis>
+                <x1-m>-3.83861</x1-m>
+                <y1-m>0.6</y1-m>
+                <z1-m>-0.96062</z1-m>
+                <x2-m>-2.67732</x2-m>
+                <y2-m>0.6</y2-m>
+                <z2-m>-1.03321</z2-m>
+            </axis>
+        </animation>
+
+
+<!--=============PORTE GAUCHE=============================-->
+
+        <animation>
+        <type>rotate</type>
+        <object-name>GPorte</object-name>
+        <object-name>GPorte-Vitrage</object-name>
+        <object-name>GPorte-Doublage</object-name>
+        <property>surface-positions/left-door-position</property>
+        <interpolation>
+            <entry>
+                    <ind>0</ind>
+                    <dep>-177</dep>
+            </entry>
+            <entry>
+                    <ind>1</ind>
+                    <dep>0</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-1.86109</x-m>
+            <y-m>-0.762985</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+              <x>0.06291466725364975521</x>
+              <y>0</y>
+              <z>1</z>
+        </axis>
+ 	</animation>
+
+
+
+
+
+</PropertyList>
