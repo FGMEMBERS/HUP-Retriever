@@ -11,6 +11,10 @@
 
 	<texture-path>Models/Textures</texture-path>
 
+        <offsets>
+            <heading-deg>180</heading-deg>
+        </offsets>
+
        <animation>
                 <condition>
                     <equals>
