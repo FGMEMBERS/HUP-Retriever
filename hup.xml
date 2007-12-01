@@ -44,6 +44,7 @@ Rotorblätter  3/3
   max. Startmasse  2.767 kg  6.100 lbs
   Hauptrotordurchmesser  10,67 m  35,0 ft
   Heckrotordurchmesser  10,67 m  35,0 ft
+  NACA 0012
   Länge  17,35 m  56,9 ft
   Höhe  3,81 m  12,5 ft
   Daten für  Piasecki HUP-3 (UH-25C)
@@ -62,20 +63,20 @@ Rotorblätter  3/3
 	</approach>
 
 	<!-- Cruise configuration -->
-	<cruise speed="90" alt="0">
+	<cruise speed="80" alt="0">
 		<control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
 		<control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
 		<control-setting axis="/controls/flight/flaps" value="0.0"/>
 	</cruise>
 
-
+        <!-- should be rellenflaphinge="0.025"-->
 	<rotor name="main" x="3.748" y="0.0" z="1.1" nx="-0.00" ny="0" nz="1." fx="1" fy="0" fz="0" ccw="0"
 		  maxcollective="100" mincollective="-100"
 		  mincyclicele="-100" maxcyclicele="100"
-		  mincyclicail="-15" maxcyclicail="15"
-		  diameter="9.2" numblades="3" weightperblade="100" relbladecenter="0.5"
-		  dynamic="1" rpm="329" rellenflaphinge="0.150" delta3="0"
-		  delta=".2"
+		  mincyclicail="-100" maxcyclicail="100"
+		  diameter="10.67" numblades="3" weightperblade="90" relbladecenter="0.6"
+		  dynamic="1" rpm="329" rellenflaphinge="0.11" delta3="0.5"
+		  delta=".25"
 		  pitch-a="10"
 		  pitch-b="15"
 		  flapmin="-15"
@@ -89,11 +90,11 @@ Rotorblätter  3/3
 		  ground-effect-constant="0.1"
 		  twist="-8.5"
 		  taper="1"
-		  chord="0.42"
+		  chord="0.36"
 		  number-of-segments="8"
 		  number-of-parts="8"
 		  rel-len-where-incidence-is-measured="0.7"
-		  rel-len-blade-start="0.11"
+		  rel-len-blade-start="0.17"
 		  rotor-correction-factor="0.8"
                 airfoil-lift-coefficient="6.3"
                 airfoil-drag-coefficient0="0.0075"
@@ -106,25 +107,25 @@ Rotorblätter  3/3
 >
 		<control-input axis="/controls/flight/rudder" control="CYCLICAIL"
 					   src0="-1.0" src1="1.0"
-					   dst0="-0.2" dst1="0.2"/>
+					   dst0="-0.02" dst1="0.02"/>
 		<control-input axis="/controls/flight/aileron" control="CYCLICAIL"
 					   src0="-1.0" src1="1.0"
-					   dst0="-0.3" dst1="0.3"/>
+					   dst0="-0.02" dst1="0.02"/>
 		<control-input axis="/controls/flight/elevator" control="COLLECTIVE"
 					   src0="-1.0" src1="1.0"
-					   dst0="0.02" dst1="-0.04"/>
+					   dst0="0.02" dst1="-0.03"/>
 		<control-input axis="/controls/engines/engine[1]/throttle" control="COLLECTIVE"
 					   src0="-0.0" src1="1.0"
-					   dst0="0.13" dst1="0.01"/>
+					   dst0="0.12" dst1="0.01"/>
 	</rotor>
-
+       <!-- should be rellenflaphinge="0.025"-->
 	<rotor name="main2" x="-2.89" y="0.0" z="1.93" nx="-0.00" ny="0" nz="1." fx="1" fy="0" fz="0" ccw="1"
 		  maxcollective="100" mincollective="-100"
 		  mincyclicele="-100" maxcyclicele="100"
-		  mincyclicail="-15" maxcyclicail="15"
-		  diameter="9.2" numblades="3" weightperblade="100" relbladecenter="0.5"
-		  dynamic="1" rpm="329" rellenflaphinge="0.150" delta3="0"
-		  delta=".2"
+		  mincyclicail="-100" maxcyclicail="100"
+		  diameter="10.67" numblades="3" weightperblade="90" relbladecenter="0.6"
+		  dynamic="1" rpm="329" rellenflaphinge="0.11" delta3="0.5"
+		  delta=".25"
 		  pitch-a="10"
 		  pitch-b="15"
 		  flapmin="-15"
@@ -138,11 +139,11 @@ Rotorblätter  3/3
 		  ground-effect-constant="0.1"
 		  twist="-8.5"
 		  taper="1"
-		  chord="0.42"
+		  chord="0.36"
 		  number-of-segments="8"
 		  number-of-parts="8"
 		  rel-len-where-incidence-is-measured="0.7"
-		  rel-len-blade-start="0.11"
+		  rel-len-blade-start="0.17"
                   rotor-correction-factor="0.8"
                 airfoil-lift-coefficient="6.3"
                 airfoil-drag-coefficient0="0.0075"
@@ -157,21 +158,21 @@ Rotorblätter  3/3
 >
 		<control-input axis="/controls/flight/rudder" control="CYCLICAIL" invert="true"
 					   src0="-1.0" src1="1.0"
-					   dst0="-0.2" dst1="0.2"/>
+					   dst0="-0.02" dst1="0.02"/>
 		<control-input axis="/controls/flight/aileron" control="CYCLICAIL"
 					   src0="-1.0" src1="1.0"
-					   dst0="-0.3" dst1="0.3"/>
+					   dst0="-0.02" dst1="0.02"/>
 		<control-input axis="/controls/flight/elevator" control="COLLECTIVE"
                                            src0="-1.0" src1="1.0"
-                                           dst0="-0.04" dst1="0.02"/>
+                                           dst0="-0.03" dst1="0.02"/>
 		<control-input axis="/controls/engines/engine[1]/throttle" control="COLLECTIVE"
 					   src0="-0.0" src1="1.0"
-					   dst0="0.13" dst1="0.01"/>
+					   dst0="0.12" dst1="0.01"/>
 	</rotor>
 
-
+        <!--should be max-power-engine="475"-->
 	<rotorgear
-	  max-power-engine="450"
+	  max-power-engine="550"
 	  max-power-rotor-brake="100"
 	  rotorgear-friction="1.4"
 	  engine-prop-factor="0.005"
@@ -192,14 +193,14 @@ Rotorblätter  3/3
 
 	<cockpit x="3.79" y="0" z="-0.16"/>
 
-	<fuselage ax="4.83" ay="0" az="-0.33" bx="-4.83" by="0" bz="-0.75"  cx="0.35" cy="1.2" cz="0.5"
+	<fuselage ax="4.83" ay="0" az="-0.33" bx="-4.83" by="0" bz="-0.75"  cx="0.45" cy="1.2" cz="0.5"
           width="1.6" taper="1.6" midpoint="0.5"/>
 
-        <fuselage ax="-1.74" ay="0" az="0.96" bx="-4.83" by="0" bz="0.96"  cx="1" cy="1.2" cz="0.5"
+        <fuselage ax="-2.1" ay="0" az="0.96" bx="-4.83" by="0" bz="0.96"  cx="1.2" cy="1.2" cz="0.5"
           width="1" taper="1" midpoint="0.5"/>
 
 
-	<vstab x="-3.26" y="0" z="0.90" taper="0.7" length="2." chord="2.5" sweep="40" incidence="0">
+	<vstab x="-2.26" y="0" z="0.90" taper="0.7" length="2." chord="2.5" sweep="40" incidence="0">
 		<stall aoa="16" width="4" peak="1.5"/>
 	</vstab>
 
@@ -249,15 +250,11 @@ Rotorblätter  3/3
 	<tank x="-0.50" y="0" z="0" capacity="450"/>
 
 
-<!-- fuselage -->
-	<ballast x="2.560" y="-0.6" z="-0.6" mass="1000"/> <!--cg 0.56-->
-        <ballast x="2.560" y="0.6" z="-0.6" mass="1000"/>
-        <ballast x="-1.44" y="-0.6" z="-0.2" mass="1000"/>
-        <ballast x="-1.44" y="0.6" z="-0.2" mass="1000"/>
-
-
-
-
+<!-- fuselage     cg from + 0.7646 to   + 0.2893  calculated with midpoint 0.429  and range  +0.3356   -0.1397-->
+        <ballast x="2.4" y="0.4" z="-0.4" mass="1000"/>
+        <ballast x="-1.2" y="0.4" z="-0.4" mass="1200"/>
+         <ballast x="2.4" y="-0.4" z="-0.4" mass="1000"/>
+        <ballast x="-1.2" y="-0.4" z="-0.4" mass="1200"/>
 
 
 
