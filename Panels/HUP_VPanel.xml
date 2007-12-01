@@ -5,181 +5,257 @@
     Property of Gerard Robin
     License:  GPL
 -->
-
+<!--                   Auteur :      Gerard ROBIN                      GPL COPYRIGHT-->
 
 
 <PropertyList>
 
-    <path>Models/h21-vpanel.ac</path>
+    <path>Models/hup-vpanel.ac</path>
     <texture-path>Models/Textures</texture-path>
 
-<!--==COLON VERT CENTRE =========================-->
+<!--==LINE 1 =========================-->
 
     <model>
             <name>ASI</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
             <offsets>
                     <x-m>0</x-m>
-                    <y-m>0</y-m>
-                    <z-m>0.0967402</z-m>
+                    <y-m>-0.0741572</y-m>
+                    <z-m>0.144376</z-m>
             </offsets>
     </model>
 
     <model>
             <name>ASI</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/ASI-S51.xml</path>
+            <path>Aircraft/HUP-Retriever/Instruments/ASI-S51.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.0741572</y-m>
+                    <z-m>0.144376</z-m>
+            </offsets>
+    </model>
+
+
+
+    <model>
+            <name>Compass</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.0741572</y-m>
+                    <z-m>0.144376</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Compass</name>
+            <path>Aircraft/HUP-Retriever/Instruments/mag-compass-HUP.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.0741572</y-m>
+                    <z-m>0.144376</z-m>
+            </offsets>
+    </model>
+
+
+
+<!--==LINE 2 ===========================-->
+
+    <model>
+            <name>Manometer</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.237577</y-m>
+                    <z-m>0.039256</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Tachymeter</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.119226</y-m>
+                    <z-m>0.039256</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>TURN</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
             <offsets>
                     <x-m>0</x-m>
                     <y-m>0</y-m>
-                    <z-m>0.0967402</z-m>
+                    <z-m>0.039256</z-m>
             </offsets>
     </model>
 
     <model>
-            <name>Tachymetre</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
+            <name>TURN</name>
+            <path>Aircraft/HUP-Retriever/Instruments/TURN-Nord.xml</path>
             <offsets>
                     <x-m>0</x-m>
                     <y-m>0</y-m>
-                    <z-m>0</z-m>
-            </offsets>
-    </model>
-
-    <model>
-            <name></name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0</y-m>
-                    <z-m>-0.096167</z-m>
-            </offsets>
-    </model>
-
-<!--==COLON HORIZ CENTRE  DROITE===========================-->
-
-    <model>
-            <name>HI</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0.0897098</y-m>
-                    <z-m>-0.044998</z-m>
-            </offsets>
-    </model>
-
-    <model>
-            <name>HI</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/HI-S51.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0.0897098</y-m>
-                    <z-m>-0.044998</z-m>
-            </offsets>
-    </model>
-
-    <model>
-            <name>Altitude</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0.174355</y-m>
-                    <z-m>-0.044998</z-m>
-            </offsets>
-    </model>
-
-    <model>
-            <name>Altitude</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/ALT-Nord.xml</path>
-            <offsets>
-                    <x-m>-0.0045323</x-m>
-                    <y-m>0.174355</y-m>
-                    <z-m>-0.044998</z-m>
-            </offsets>
-    </model>
-
-    <model>
-            <name>VSI</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0.259001</y-m>
-                    <z-m>-0.044998</z-m>
-            </offsets>
-    </model>
-
-    <model>
-            <name>VSI</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/IVSI-Nord.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0.259001</y-m>
-                    <z-m>-0.044998</z-m>
-            </offsets>
-    </model>
-
-    <!--==BAS DROITE============================================-->
-
-    <model>
-            <name></name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_tpt-S51.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0.0870272</y-m>
-                    <z-m>-0.13637</z-m>
-            </offsets>
-    </model>
-
-    <model>
-            <name>Turn</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel_pt-Nord.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0.174355</y-m>
-                    <z-m>-0.135512</z-m>
-            </offsets>
-    </model>
-
-    <model>
-            <name>Turn</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/TURN-Nord.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0.174355</y-m>
-                    <z-m>-0.135512</z-m>
-            </offsets>
-    </model>
-
-<!--==HAUT DROITE============================================-->
-
-    <model>
-            <name></name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel-Nord.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0.110977</y-m>
-                    <z-m>0.0852558</z-m>
+                    <z-m>0.039256</z-m>
             </offsets>
     </model>
 
     <model>
             <name>AI</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Bezel-Nord.xml</path>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
             <offsets>
                     <x-m>0</x-m>
-                    <y-m>0.236636</y-m>
-                    <z-m>0.0852558</z-m>
+                    <y-m>0.119226</y-m>
+                    <z-m>0.039256</z-m>
             </offsets>
     </model>
 
     <model>
             <name>AI</name>
-            <path>Aircraft/H-21C-Shawnee/Instruments/Attitude-P38.xml</path>
+            <path>Aircraft/HUP-Retriever/Instruments/Attitude-S51.xml</path>
             <offsets>
                     <x-m>0</x-m>
-                    <y-m>0.236636</y-m>
-                    <z-m>0.0852558</z-m>
+                    <y-m>0.119226</y-m>
+                    <z-m>0.039256</z-m>
             </offsets>
     </model>
+
+    <model>
+            <name>Cylinder Head Temperature</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.237577</y-m>
+                    <z-m>0.039256</z-m>
+            </offsets>
+    </model>
+
+
+    <!--==LINE 3============================================-->
+
+    <model>
+            <name>VSI</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.237577</y-m>
+                    <z-m>-0.0667085</z-m>
+            </offsets>
+    </model>
+
+     <model>
+            <name>VSI</name>
+            <path>Aircraft/HUP-Retriever/Instruments/IVSI-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.237577</y-m>
+                    <z-m>-0.0667085</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Altitude</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.119226</y-m>
+                    <z-m>-0.0667085</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Altitude</name>
+            <path>Aircraft/HUP-Retriever/Instruments/ALT-Nord.xml</path>
+            <offsets>
+                    <x-m>-0.0</x-m>
+                    <y-m>-0.119226</y-m>
+                    <z-m>-0.0667085</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>HI</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.0667085</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Fuel and Oil Pressure</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.119226</y-m>
+                    <z-m>-0.0667085</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Temperature</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.237577</y-m>
+                    <z-m>-0.0667085</z-m>
+            </offsets>
+    </model>
+
+<!--==LINE 4 ============================================-->
+
+    <model>
+            <name>Fuel Quantity</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel_tpt-S51.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.237787</y-m>
+                    <z-m>-0.165451</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Clock</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel_tpt-S51.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.119435</y-m>
+                    <z-m>-0.165451</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Auto Pilote Synchronasation Master</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel_tpt-S51.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.165451</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Clock Elapse Time</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel_tpt-S51.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.119435</y-m>
+                    <z-m>-0.165451</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Volt-Amp</name>
+            <path>Aircraft/HUP-Retriever/Instruments/Bezel_tpt-S51.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.237787</y-m>
+                    <z-m>-0.165451</z-m>
+            </offsets>
+    </model>
+
 
 
 
