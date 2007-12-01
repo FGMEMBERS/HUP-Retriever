@@ -1,4 +1,4 @@
-<PropertyList include="HUP_base.xml">
+<PropertyList>
 
 
     <!--
@@ -18,34 +18,21 @@
             <x-m>0</x-m>
         </offsets>
 
-       <!-- <animation>
+        <animation>
 		<type>noshadow</type>
-                <object-name>Fuselage-Doublage</object-name>
-                <object-name>Cockpit</object-name>
- 	</animation>-->
+                <object-name>VPanel</object-name>
+ 	</animation>
 
-
-        <!--<model>
-            <name>Fuselage-Doublage</name>
-            <path>Aircraft/HUP-Retriever/Models/HUP-Fuselage-Doublage.xml</path>
+        <model>
+            <name>VPanel</name>
+            <path>Aircraft/HUP-Retriever/Panels/HUP_VPanel.xml</path>
             <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0</y-m>
-                    <z-m>0</z-m>
+                    <x-m>-4.33172</x-m>
+                    <y-m>0.0</y-m>
+                    <z-m>-0.160922</z-m>
                     <pitch-deg>0</pitch-deg>
             </offsets>
         </model>
-
-        <model>
-            <name>Cockpit</name>
-            <path>Aircraft/HUP-Retriever/Models/HUP-Cockpit.xml</path>
-            <offsets>
-                    <x-m>0</x-m>
-                    <y-m>0</y-m>
-                    <z-m>0</z-m>
-                    <pitch-deg>0</pitch-deg>
-            </offsets>
-        </model>-->
 
         <model>
             <name>AVRotor-Tete</name>
@@ -294,6 +281,7 @@
         <animation>
             <type>rotate</type>
              <object-name>Trappe</object-name>
+             <object-name>Trappe-Doublage</object-name>
             <property>surface-positions/trap-position</property>
             <interpolation>
                     <entry>
