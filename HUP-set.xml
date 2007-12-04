@@ -12,7 +12,7 @@
 
 <PropertyList>
  <sim>
-	<description>HUP_Helicopter_Retriever</description>
+	<description>Piasecki_HUP_Helicopter</description>
         <author>Gerard Robin</author>
         <status>alpha, "GPL Copyright"</status>
         <version> 0.1</version>
