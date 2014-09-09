@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    Gerard Robin
+    Copyright License:  GPL
+-->
+<!--
+************************************************************************
+
+************************************************************************
+-->
+
+<PropertyList>
+ <sim>
+	<description>Piasecki_HUP_Helicopter</description>
+        <author>Gerard Robin</author>
+        <status>alpha, "GPL Copyright"</status>
+        <version> 0.1</version>
+	<flight-model>yasim</flight-model>
+	<aero>hup</aero>
+        <startup>
+            <splash-texture>Aircraft/HUP-Retriever/splash.rgb</splash-texture>
+        </startup>
+	<fuel-fraction>0.8</fuel-fraction>
+	<sound>
+		<path>Aircraft/HUP-Retriever/Sounds/bell206-sound.xml</path>
+	</sound>
+
+
+
+  <hud>
+  <enable3d>false</enable3d>
+   <visibility archive="n">false</visibility>
+  </hud>
+
+  <model>
+   <path archive="y">Aircraft/HUP-Retriever/Models/HUP-piasecki.xml</path>
+                    <hup>
+                            <nav-lights type="bool">true</nav-lights>
+                            <state type="int">0</state>
+                            <rotor-step-deg type="float">0.0</rotor-step-deg>
+                    </hup>
+  </model>
+
+  <view>
+        <internal archive="y">true</internal>
+           <config>
+                     <x-offset-m archive="y">-0.370673</x-offset-m><!--right-->
+                     <y-offset-m archive="y">0.225709</y-offset-m><!--up-->
+                     <z-offset-m archive="y">-3.58568</z-offset-m><!--back-->
+                     <pitch-offset-deg>-12</pitch-offset-deg>
+                     <default-field-of-view-deg type="double">73.0</default-field-of-view-deg>
+           </config>
+  </view>
+  <chase-distance-m type="double">-20.0</chase-distance-m>
+    <weight n="0">
+            <name>Pilots</name>
+            <weight-lb>300</weight-lb>
+            <max-lb>400</max-lb>
+    </weight>
+    <weight n="1">
+            <name>Pasengers</name>
+            <weight-lb>700</weight-lb>
+            <max-lb>800</max-lb>
+    </weight>
+
+
+    <help include="Help/HUP-help.xml"/>
+
+ </sim>
+
+
+ <controls>
+	<flight>
+                <aileron-trim>-0.00000</aileron-trim>
+                <rudder-trim>-0.0000</rudder-trim>
+	</flight>
+	<engines>
+                <engine n="0">
+                        <magnetos>0</magnetos>
+                        <rotorgear>0</rotorgear>
+                        <master-bat>false</master-bat>
+                        <throttle>1</throttle>
+                </engine>
+                <engine n="1">
+                        <throttle>1</throttle>
+                </engine>
+	</engines>
+        <gear>
+                <brake-parking type="double">1.0</brake-parking>
+        </gear>
+        <rotor>
+            <brake>1</brake>
+        </rotor>
+        <electric>
+            <master-switch>false</master-switch>
+            <battery-switch>false</battery-switch>
+        </electric>
+        <switches>
+            <landing-light>true</landing-light>
+            <master-avionics>false</master-avionics>
+        </switches>
+        <lighting>
+            <instruments-norm type="double">0.4</instruments-norm>
+        </lighting>
+ </controls>
+
+
+	<input include="Inputs/HUP-input.xml"/>
+
+
+
+	<nasal>
+                <electrical>
+                        <file>Aircraft/HUP-Retriever/System/electrical.nas</file>
+                </electrical>
+		<hup>
+			<file>Aircraft/HUP-Retriever/System/hup.nas</file>
+		</hup>
+	</nasal>
+
+
+</PropertyList>
