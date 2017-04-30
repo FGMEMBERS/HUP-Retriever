@@ -26,6 +26,17 @@
 		<path>Aircraft/HUP-Retriever/Sounds/bell206-sound.xml</path>
 	</sound>
 
+	<tags>
+		<tag>helicopter</tag>
+		<tag>1940s</tag>
+		<tag>1950s</tag>
+		<tag>1960s</tag>
+		<tag>vtol</tag>
+		<tag>radial</tag>
+		<tag>piston</tag>
+		<tag>single-engine</tag>
+	</tags>
+
 
 
   <hud>
